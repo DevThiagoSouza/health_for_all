@@ -2,4 +2,12 @@
 .imc {
     max-width: 400px;
     margin-top: 150px;
+    margin-left: 710px;
+}
+
+@media screen and (max-width: 800px) {
+    .imc {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
