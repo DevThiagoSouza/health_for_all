@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IMC</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="assets/img/icon_saude.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/contact.css" rel="stylesheet">
+  <link href="assets/css/imc.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ 
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center" >
+
+      <h1 class="logo me-auto"><a href="index.html">Saude Para Todos</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html">Sobre</a></li>
+          <li><a class="nav-link   scrollto" href="./blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Saúde</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./woman.html">Mulher</a></li>
+              <li><a href="./elderly.html">Idoso</a></li>
+              <li><a href="./imc.html">Imc</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="./contato.html"> contato</a></li>
+     
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container d-flex justify-content-center">
+        </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+    <div  class="imc"  data-aos="fade-up">
+        
+        <h2>Calcular o seu IMC</h2>
+        <div class="form-group">
+            <label for="peso">Peso (em kg):</label>
+            <input type="number" class="form-control" id="peso">
+    
+        </div>
+        <div class="form-group">
+            <label for="altura">Altura (em cm):</label>
+            <input type="number" class="form-control" id="altura">
+        </div>
+        <button class="btn btn-primary" onclick="calcularIMC()">Calcular IMC</button>
+        <div class="form-group">
+            <label for="resultado">Seu IMC:</label>
+            <input type="text" class="form-control" id="resultado" readonly>
+        </div>
+    </div>
+
+  </main>
+ 
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/imc.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="500">
+        
+        <h2>Calcular o seu IMC</h2>
+        <div class="form-group">
+            <label for="peso">Peso (em kg):</label>
+            <input type="number" class="form-control" id="peso">
+    
+        </div>
+        <div class="form-group">
+            <label for="altura">Altura (em cm):</label>
+            <input type="number" class="form-control" id="altura">
+        </div>
+        <button class="btn btn-primary" onclick="calcularIMC()">Calcular IMC</button>
+        <div class="form-group">
+            <label for="resultado">Seu IMC:</label>
+            <input type="text" class="form-control" id="resultado" readonly>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function calcularIMC() {
+            var peso = document.getElementById('peso').value;
+            var altura = document.getElementById('altura').value / 100;
+            var imc = peso / (altura * altura);
+            document.getElementById('resultado').value = imc.toFixed(2);
+        }
+    </script>
+
+</body>-->
