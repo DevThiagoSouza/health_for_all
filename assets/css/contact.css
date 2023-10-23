@@ -58,7 +58,13 @@ body {
     }
   }
   
-
+  #header {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    max-height: 10vh;
+    background-color: #37517e;
+  }
 
   .navbar {
     padding: 0;
