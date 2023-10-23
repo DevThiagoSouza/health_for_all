@@ -194,9 +194,7 @@ body {
     }
   }
   
-  /**
-  * Mobile Navigation 
-  */
+
   .mobile-nav-toggle {
     color: #fff;
     font-size: 28px;
@@ -437,19 +435,19 @@ body {
   }
 
   .row-cards {
-    display: flex;
+    display: flex ;
     align-items: center;
     justify-content: center;
     width: 80vw;
     gap: 1.5rem;
     flex-wrap: wrap;
+ 
   }
 
   #card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: center; 
     min-height: fit-content;
     min-width: fit-content;
     max-width: 17vw;
@@ -458,8 +456,8 @@ body {
   }
 
   #card img {
-    width: 12vw;
-    max-width: 17vw;
+    width: 12em;
+    max-width: 17em;
     object-fit: cover;
     margin-block: auto;
   }
