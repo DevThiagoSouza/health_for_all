@@ -1,8 +1,17 @@
 
 .imc {
     max-width: 400px;
-    margin-top: 150px;
-    margin-left: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem auto;
+    gap: 1rem;
+    
+    
+
+    /* margin-top: 150px;
+    margin-left: 710px; */
 }
 
 @media screen and (max-width: 800px) {

@@ -438,7 +438,7 @@ body {
     display: flex ;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 100%;
     gap: 1.5rem;
     flex-wrap: wrap;
  
